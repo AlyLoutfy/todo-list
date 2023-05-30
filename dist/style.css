@@ -1,0 +1,98 @@
+:root {
+  --background: #d7d7d7;
+  --navBackground: #7facbb;
+  --headerBackground: #028ab7;
+  --font: #000000;
+  --header: #fff;
+  --calculator: #212121;
+  --screen: #86bcc6;
+  --buttons: #414141;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--font);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--headerBackground);
+  padding: 0 40px;
+  color: var(--font);
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+header .title {
+  display: flex;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+}
+
+.nav {
+  background-color: var(--navBackground);
+  padding: 40px;
+  height: 90vh;
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.nav button {
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 17px;
+  display: flex;
+  gap: 10px;
+}
+
+.content {
+  padding: 40px;
+}
+
+/* Footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.fa-github {
+  color: var(--font);
+  font-size: 24px;
+  transition: transform 0.9s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.4);
+}

@@ -4,9 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Todo List</title>
   </head>
+
   <body>
-    <script src="../src/index.js"></script>
+    <header>
+      <div class="title">
+        <img src="logo.png" alt="" width="65" />
+      </div>
+    </header>
+    <div class="main">
+      <div class="nav">
+        <button>
+          <i class="fas fa-inbox"></i>
+          Inbox
+        </button>
+        <button>
+          <i class="fas fa-calendar"></i>
+          Today
+        </button>
+      </div>
+      <div class="content">content</div>
+    </div>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        AlyLoutfy
+      </p>
+      <a href="https://github.com/AlyLoutfy">
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
+    <script src="./src/index.js"></script>
   </body>
 </html>
