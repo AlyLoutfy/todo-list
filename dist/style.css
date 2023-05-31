@@ -2,7 +2,7 @@
   --background: #d7d7d7;
   --navBackground: #7facbb;
   --headerBackground: #028ab7;
-  --font: #000000;
+  --font: #333333;
   --header: #fff;
   --calculator: #212121;
   --screen: #86bcc6;
@@ -40,8 +40,7 @@ header {
   font-weight: 600;
 }
 
-header .title {
-  display: flex;
+header img {
   cursor: pointer;
 }
 
@@ -51,22 +50,40 @@ header .title {
 
 .nav {
   background-color: var(--navBackground);
-  padding: 40px;
+  color: var(--font);
+  padding: 25px;
   height: 90vh;
-  width: 18vw;
+  width: 22vw;
+}
+
+.title {
+  font-size: 19px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: solid 2px;
+}
+
+.home,
+.projects {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 18px;
+  margin-bottom: 40px;
 }
 
 .nav button {
+  background-color: var(--navBackground);
   cursor: pointer;
   border: none;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 17px;
   display: flex;
   gap: 10px;
+}
+
+.selected {
+  background-color: var(--headerBackground) !important;
 }
 
 .content {
