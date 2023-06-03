@@ -82,11 +82,11 @@ header img {
   gap: 10px;
 }
 
-.selected {
+.active {
   background-color: var(--headerBackground) !important;
 }
 
-.content {
+.project-content {
   padding: 40px;
 }
 
