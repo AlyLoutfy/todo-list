@@ -75,11 +75,12 @@ header img {
   background-color: var(--navBackground);
   cursor: pointer;
   border: none;
-  padding: 12px;
+  padding: 15px;
   border-radius: 5px;
   font-size: 17px;
   display: flex;
   gap: 10px;
+  transition: width 0.5s, height 0.5s, background-color 0.5s;
 }
 
 .active {
